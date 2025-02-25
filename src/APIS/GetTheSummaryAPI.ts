@@ -1,9 +1,9 @@
 import { DuneClient, QueryParameter } from "@duneanalytics/client-sdk";
 
-const DUNE_API_KEY: string = process.env.DUNE_API_KEY || "";
+const DUNE_API_KEY: string = process.env.DUNE_API_KEY || "lj0mWMA3BT9aJiKcTSi50B4hAFWKUEKP";
 const client = new DuneClient(DUNE_API_KEY);
 
-const queryID: number = process.env.DUNE_QUERY_ID||"";
+const queryID: number =4764225;
 
 export const fetchQueryResult = async (sym: string,): Promise<any> => {
   console.log( sym )
